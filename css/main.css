@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 100%);    
+}
+
+.imagem {
+    background-image: url(../images/bg-main-mobile.png);
+    height: 240px;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+}
+
+.container-form__form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 21.938rem;
+    height: 20.625rem;
+    margin-top: 5.5rem;
+}
+
+.form__data {
+    display: flex;
+    justify-content: space-between;
+    width: 9.763rem;
+    height: 3.996rem;
+}
+
+.info {
+    height: 2.644rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+}

@@ -2,36 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <div>
-
+  <div class="imagem">
+    <div class="cartao-frente">
+      <p>0000 0000 0000 0000</p>
+      <p>Nome</p>
+      <p>00/00</p>
+    </div>
+    <div class="cartao-tras">
+      <p>cvc</p>
+    </div>
   </div>
-  <div class="form"> 
-    <form>
-      <label for="">Nome no Cartão</label>
-      <input type="text">
-      <label for="">Número do Cartão</label>
-      <input type="number" id="">
+  <div class="container-form"> 
+    <form class="container-form__form">
       <div>
-        <label for="">Mês</label>
-        <input type="number" id="">
-        <label for="">Ano</label>
-        <input type="number" id="">
+        <label for="">Nome no Cartão</label>
+        <input type="text" class="info">
       </div>
-      <label for="">CVC</label>
-      <input type="number" id="">
+      <div>
+        <label for="">Número do Cartão</label>
+        <input type="number" id="" class="info">
+      </div>
+      <div class="form__data">
+        <label for="">Mês</label>
+        <input type="number" id="" class="info">
+        <label for="">Ano</label>
+        <input type="number" id="" class="info">
+      </div>
+      <div>
+        <label for="">CVC</label>
+        <input type="number" id="" class="info">
+      </div>
+      <input type="submit" value="Confirmar">
     </form>
   </div>
 </body>
