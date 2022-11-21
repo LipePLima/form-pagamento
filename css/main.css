@@ -1,17 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
 body {
+    font-family: 'Space Grotesk';
     background-color: hsl(0, 0%, 100%);    
 }
 
 .imagem {
+    position: absolute;
     background-image: url(../images/bg-main-mobile.png);
-    height: 240px;
+    width: 375px;
+    height: 15rem;
 }
 
+.imagem__cartao {
+    position: absolute;
+}
+
+.cartao-frente {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/bg-card-front\ p.png) ;
+    border-radius: 10px;
+    margin: -70px 0 0 12px;
+    width: 17.875rem;
+    height: 9.813rem;
+    color: #fff;
+}
+
+.cartao-tras {
+    position: relative;
+    z-index: 0;
+    background-image: url(../images/bg-card-back\ p.png);
+    border-radius: 10px;
+    margin: 42px 22px 0 67px;
+    width: 17.875rem;
+    height: 9.813rem;
+    color: #fff;
+}
+
+#logo-card {
+    margin: 15px 0 0 15px;
+}
+
+#num-card {
+    margin: 35px 32px 0 32px;
+    font-size: 20px;
+}
+
+#name-card {
+    margin: 16px 0 0 40px;
+}
+
+#data-card {
+    position: relative;
+    margin: -15px 0 0 200px;
+}
+
+#cvc-card {
+    position: relative;
+    padding: 68px 0 0 220px;
+}
+
+/* FORMULÁRIO */
+
 .container-form {
+    font-family: 'Space Grotesk';
+    position: absolute;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin: 220px 12px 0 12px;
 }
 
 .container-form__form {
@@ -23,15 +81,63 @@ body {
     margin-top: 5.5rem;
 }
 
-.form__data {
+.form__div {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+.form__div2 {
     display: flex;
     justify-content: space-between;
-    width: 9.763rem;
-    height: 3.996rem;
+    margin: .5rem 0;
 }
 
 .info {
-    height: 2.644rem;
+    height: 2rem;
     border: 1px solid #000;
     border-radius: 10px;
+    padding-left: .5rem;
+}
+
+.label {
+    margin: 0 0 .1rem .3rem;
+}
+
+.form__data {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 11rem;
+    height: 3.996rem;
+}
+
+.form__data-data {
+    display: flex;
+    flex-direction: column;
+    margin-right: .8rem;
+}
+
+.form__data-cvc {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.data {
+    width: 4.594rem;
+}
+
+#cvc {
+    width: 9rem;
+}
+
+.button {
+    font-family: 'Space Grotesk';
+    height: 2rem;
+    margin-top: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
 }

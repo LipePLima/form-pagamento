@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Frontend Mentor | Interactive card details form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Frontend Mentor | Interactive card details form</title>
 </head>
 <body>
-  <div class="imagem">
-    <div class="cartao-frente">
-      <p>0000 0000 0000 0000</p>
-      <p>Nome</p>
-      <p>00/00</p>
-    </div>
-    <div class="cartao-tras">
-      <p>cvc</p>
-    </div>
-  </div>
-  <div class="container-form"> 
-    <form class="container-form__form">
-      <div>
-        <label for="">Nome no Cartão</label>
-        <input type="text" class="info">
-      </div>
-      <div>
-        <label for="">Número do Cartão</label>
-        <input type="number" id="" class="info">
-      </div>
-      <div class="form__data">
-        <label for="">Mês</label>
-        <input type="number" id="" class="info">
-        <label for="">Ano</label>
-        <input type="number" id="" class="info">
-      </div>
-      <div>
-        <label for="">CVC</label>
-        <input type="number" id="" class="info">
-      </div>
-      <input type="submit" value="Confirmar">
-    </form>
-  </div>
+	<section class="imagem">
+		<div class="imagem__cartao">
+			<div class="cartao-tras">
+				<p id="cvc-card">cvc</p>
+			</div>
+			<div class="cartao-frente">
+				<img src="images/card-logo p.svg" id="logo-card">
+				<p id="num-card">0000 0000 0000 0000</p>
+				<p id="name-card">Carla P Franco</p>
+				<p id="data-card">00/00</p>
+			</div>
+		</div>
+	</section>
+	<section class="container-form"> 
+		<form class="container-form__form">
+			<div class="form__div">
+				<label for="nome" class="label">Nome no Cartão</label>
+				<input type="text" id="nome" class="info" placeholder="Carla P Franco">
+			</div>
+			<div class="form__div">
+				<label for="numero" class="label">Número do Cartão</label>
+				<input type="number" id="numero" class="info" placeholder="0000 0000 0000 0000">
+			</div>
+			<div class="form__div2">
+				<div class="form__data">
+					<div class="form__data-data">
+						<label for="mes" class="label">Validade</label>
+						<input type="number" id="mes" class="info data" placeholder="MM">
+					</div>
+					<div class="form__data-data">
+						<label for="ano" class="label">Ano</label>
+						<input type="number" id="ano" class="info data" placeholder="AA">
+					</div>
+				</div>
+				<div class="form__data-cvc">
+					<label for="cvc" class="label">CVC</label>
+					<input type="number" id="cvc" class="info" placeholder="000">
+				</div>
+			</div>
+			
+			<input type="submit" value="Confirmar" class="button">
+		</form>
+	</section>
 </body>
 </html>
