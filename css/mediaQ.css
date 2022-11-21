@@ -1,0 +1,10 @@
+@media screen and (min-width: 1065px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imagem {
+        background-image: url(../images/bg-main-desktop.png);
+    }
+}
