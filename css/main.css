@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Space Grotesk';
-    background-color: hsl(0, 0%, 100%);    
+    background-color: hsl(0, 0%, 100%);   
+    width: 100%; 
 }
 
 .imagem {
@@ -73,7 +74,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 220px 12px 0 12px;
+    margin: 220px 0 0 0;
     width: 100%;
 }
 
