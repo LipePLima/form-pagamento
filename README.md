@@ -15,12 +15,15 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
 
  ![Status: em desenvolvimento](https://img.shields.io/badge/STATUS-Em%20desenvolvimento-blue)
 
- - [x] Layout mobile;
- - [x] Layout desktop;
- - [ ] Atualize os detalhes no cartão à medida que o usuário preenche os campos;
- - [ ] Validar os campos do formulário quando o formulário é enviado;
- - [ ] Se não houver erros, exiba o estado concluído;
- - [ ] Redefinir o formulário quando o usuário clica em "Continuar" no estado preenchido;
+ - [x] Layout mobile - Página inicial;
+ - [x] Layout desktop - Página inicial;
+ - [ ] Preencher o nome do usuário no cartão a medida que é escrito no formulário;
+ - [ ] Preencher o número do cartão a medida que é escrito no formulário;
+ - [ ] Preencher a validade do cartão a medida que é escrita no formulário;
+ - [ ] Preencher cvc do cartão a medida que é preenchido no formulário;
+ - [ ] Validação do campos do formulário em tempo real;
+ - [ ] Se não houver erros, exiba a página concluído;
+ - [ ] Redefinir o formulário quando o usuário clica em "Confirmar" no estado preenchido;
 
 ## Tecnologias
 
