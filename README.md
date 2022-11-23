@@ -16,7 +16,7 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
  ![Status: em desenvolvimento](https://img.shields.io/badge/STATUS-Em%20desenvolvimento-blue)
 
  - [x] Layout mobile;
- - [ ] Layout desktop;
+ - [x] Layout desktop;
  - [ ] Atualize os detalhes no cartão à medida que o usuário preenche os campos;
  - [ ] Validar os campos do formulário quando o formulário é enviado;
  - [ ] Se não houver erros, exiba o estado concluído;
