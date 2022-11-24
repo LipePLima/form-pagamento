@@ -13,28 +13,35 @@
 
     .cartao-frente {
         background-image: url(../images/bg-card-front.png);
-        width: 20rem;
-        height: 12rem;
-        margin: -25rem 0 0 270px;
+        width: 24rem;
+        height: 14rem;
+        margin: -30rem 0 0 20rem;
     }
 
     .cartao-tras {
         background-image: url(../images/bg-card-back.png);
-        width: 20rem;
-        height: 12rem;
-        margin: 1rem 0 0 350px;
+        width: 24rem;
+        height: 14rem;
+        margin: 1rem 0 0 23rem;
     }
 
     #logo-card {
         margin: 20px 0 0 20px;
+        width: 58px;
+        height: 36px;
     }
 
     #num-card {
         margin: 62px 49px 0 49px;
+        font-size: 24px;
     }
 
     #name-card {
-        margin: 20px 0 0 49px;
+        margin: 28px 0 0 49px;
+    }
+
+    #data-card {
+        margin: -17px 0 0 260px;
     }
 
     #cvc-card {
