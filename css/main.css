@@ -53,6 +53,7 @@ body {
 
 #name-card {
     margin: 16px 0 0 40px;
+    text-transform: uppercase;
 }
 
 #data-card {
@@ -107,20 +108,22 @@ body {
 }
 
 .label {
-    margin: 0 0 .1rem .3rem;
+    margin: 0 0 .3rem .3rem;
 }
 
 .form__data {
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    align-items: left;
+    flex-direction: column;
     width: 11rem;
     height: 3.996rem;
 }
 
 .form__data-data {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 11.5rem;
     margin-right: .8rem;
 }
 

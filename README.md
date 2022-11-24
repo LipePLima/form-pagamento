@@ -17,7 +17,7 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
 
  - [x] Layout mobile - Página inicial;
  - [x] Layout desktop - Página inicial;
- - [ ] Preencher o nome do usuário no cartão a medida que é escrito no formulário;
+ - [x] Preencher o nome do usuário no cartão a medida que é escrito no formulário;
  - [ ] Preencher o número do cartão a medida que é escrito no formulário;
  - [ ] Preencher a validade do cartão a medida que é escrita no formulário;
  - [ ] Preencher cvc do cartão a medida que é preenchido no formulário;

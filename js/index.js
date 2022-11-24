@@ -1,39 +1,24 @@
 const button = document.querySelector('#button');
+const form  = document.querySelector('#form');
 
-button.addEventListener('click', function (event) {
+button.addEventListener('click', event => {
     event.preventDefault();
 
 
-    modifyCard()
 })
 
-function cardData () {
-    const form  = document.querySelector('#form');
+form['nome'].addEventListener("keyup", event => {
+    event.preventDefault();
 
-    const data = {
-        nome: form.nome.value,
-        num: form.numero.value,
-        month: form.mes.value,
-        year: form.ano.value,
-        cvc: form.cvc.value
-    }
+    const costumerName = document.querySelector("#nome");
+    costumerName.textContent = form['nome'].value;
 
-    return data
-}
+});
 
-function modifyCard () {
-    const costumer = cardData();
+form['numero'].addEventListener('keyup', event => {
+    event.preventDefault();
 
-    const cvc  = document.querySelector('#cvc-card');
-    const num  = document.querySelector('#num-card');
-    const name = document.querySelector('#name-card');
-    const date = document.querySelector('#data-card');
-    
-    costumer.nome.addEventListener('input', function addNum () {
-        if (costumer.nome = '') {
-            name.innerHTML = 'Nome Completo'
-        } else {
-            name.innerHTML = costumer.nome
-        }
-    })
-}
+    const numCard = document.querySelector('#num-card');
+    numCard.textContent = form['num'].value;
+})
+
