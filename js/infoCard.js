@@ -1,12 +1,13 @@
 const nome = form['name'];
-const num  = form['num'];
+const numero  = form['num'];
 const cvc  = form['cvc'];
 
-const listCard = [nome, num, cvc];
+const listCard = [nome, numero, cvc];
+const listName = ["name", "num", "cvc"]
 
 listCard.forEach( (item) => {
-    item.onkeypress( () => {
-        const costumer = document.querySelector(`${item}-card`);
+    item.addEventListener('keyup', () => {
+        const costumer = document.querySelector(`#${listName}-card`);
     
         if (item.value == '') {
             costumer.textContent = costumer.value
@@ -41,7 +42,7 @@ form['cvc'].addEventListener('keyup', () => {
     const cvc = document.querySelector('#cvc-card');
 
     if (form['cvc'].value == '') {
-        cvc.textContent = 'cvc'
+        cvc.textContent = cvc
     } else {
         cvc.textContent = form['cvc'].value;
     }
@@ -53,7 +54,7 @@ form['numero'].addEventListener('keyup', event => {
     const numCard = document.querySelector('#num-card');
 
     if (form['numero'].value == '') {
-        numCard.textContent = '0000 0000 0000 0000'
+        numCard.textContent = numCard
     } else {
         numCard.textContent = form['numero'].value;
     }

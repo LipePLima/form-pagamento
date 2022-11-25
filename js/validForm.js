@@ -1,20 +1,20 @@
 function validForm () {
-    const inputName  = document.querySelector('#name');
-    const inputNum   = document.querySelector('#num');
-    const inputMonth = document.querySelector('#mes');
-    const inputYear  = document.querySelector('#ano');
-    const inputCvc   = document.querySelector('#cvc');
+    const mes = form['mes'];
+    const ano  = form['ano'];
 
-    const lista = [inputName, inputNum, inputMonth, inputYear, inputCvc];
+    const lista = [nome, numero, mes, ano, cvc];
     const erros = [];
 
     lista.forEach( (item) => {
         if (item.value === '') {
             const erro = item.parentNode.querySelector('small');
-    
+            const campo = item.parentNode.querySelector('label').textContent;
+
+            console.log(campo)
+
             item.classList.add('info-erro')
             erro.classList.add('erro')
-            erro.textContent = `Preencha o Campo `
+            erro.textContent = `Preencha o Campo ${campo}`
             erros.push(item)
         } else {
             const erro = item.parentNode.querySelector('small');
