@@ -24,7 +24,7 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
  - [x] Validação do campos do formulário ao enviar;
  - [x] Redefinir o formulário quando o usuário clica em "Confirmar" no estado preenchido;
  - [x] Criar layout responsivo da página concluído;
- - [ ] Se não houver erros, exiba a página concluído;
+ - [x] Se não houver erros, exiba a página concluído;
 
 ## Tecnologias
 

@@ -24,6 +24,7 @@
     width: 23.875rem;
     height: 3.25rem;
     font-size: 18px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1124px) {
