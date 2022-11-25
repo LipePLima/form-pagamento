@@ -1,7 +1,4 @@
 function validForm () {
-    const mes = form['mes'];
-    const ano  = form['ano'];
-
     const lista = [nome, numero, mes, ano, cvc];
     const erros = [];
 
@@ -9,8 +6,6 @@ function validForm () {
         if (item.value === '') {
             const erro = item.parentNode.querySelector('small');
             const campo = item.parentNode.querySelector('label').textContent;
-
-            console.log(campo)
 
             item.classList.add('info-erro')
             erro.classList.add('erro')
@@ -26,5 +21,6 @@ function validForm () {
 
     if (erros.length === 0) {
         form.reset()
+        window.location.href = '../finaliza.html'
     }
 }

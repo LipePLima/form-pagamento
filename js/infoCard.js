@@ -1,62 +1,58 @@
-const nome = form['name'];
-const numero  = form['num'];
-const cvc  = form['cvc'];
+const nome   = document.querySelector('#name');
+const numero = document.querySelector('#num');
+const mes    = document.querySelector('#mes');
+const ano    = document.querySelector('#ano');
+const cvc    = document.querySelector('#cvc');
 
-const listCard = [nome, numero, cvc];
-const listName = ["name", "num", "cvc"]
+nome.addEventListener('keyup', () => {
+    const costumer = document.querySelector('#name-card');
 
-listCard.forEach( (item) => {
-    item.addEventListener('keyup', () => {
-        const costumer = document.querySelector(`#${listName}-card`);
-    
-        if (item.value == '') {
-            costumer.textContent = costumer.value
-        } else {
-            costumer.textContent = item.value;
-        }
-    });
-})
+    if (nome.value == '') {
+        costumer.textContent = 'NOME COMPLETO'
+    } else {
+        costumer.textContent = nome.value;
+    }
+});
 
-
-form['mes'].addEventListener('keyup', () => {
+mes.addEventListener('keyup', () => {
     const month = document.querySelector('#mes-card');
 
-    if (form['mes'].value == '') {
+    if (mes.value == '') {
         month.textContent = '00/'
     } else {
-        month.textContent = `${form['mes'].value}/`;
+        month.textContent = `${mes.value}/`;
     }
 })
 
-form['ano'].addEventListener('keyup', () => {
+ano.addEventListener('keyup', () => {
     const year = document.querySelector('#ano-card');
 
-    if (form['ano'].value == '') {
+    if (ano.value == '') {
         year.textContent = '00'
     } else {
-        year.textContent = form['ano'].value;
+        year.textContent = ano.value;
     }
 })
 
-form['cvc'].addEventListener('keyup', () => {
-    const cvc = document.querySelector('#cvc-card');
+cvc.addEventListener('keyup', () => {
+    const cvcCard = document.querySelector('#cvc-card');
 
-    if (form['cvc'].value == '') {
-        cvc.textContent = cvc
+    if (cvc.value == '') {
+        cvcCard.textContent = 'cvc'
     } else {
-        cvc.textContent = form['cvc'].value;
+        cvcCard.textContent = cvc.value;
     }
 })
 
-form['numero'].addEventListener('keyup', event => {
+numero.addEventListener('keyup', event => {
     event.preventDefault();
 
     const numCard = document.querySelector('#num-card');
 
-    if (form['numero'].value == '') {
-        numCard.textContent = numCard
+    if (numero.value == '') {
+        numCard.textContent = '0000 0000 0000 0000'
     } else {
-        numCard.textContent = form['numero'].value;
+        numCard.textContent = numero.value;
     }
 })
 
@@ -84,7 +80,7 @@ function id( el ){
 }
 
 window.onload = function(){
-	id('numero').onkeypress = function(){
+	id('num').onkeypress = function(){
 		mascara( this, mcc );
 	}
 }

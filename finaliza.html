@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/cards.css">
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/final.css">
+	<link rel="stylesheet" href="css/mediaQ.css">
+	<title>Pagamento Concluído | Cartão de Crédito</title>
+</head>
+<body>
+	<section class="imagem">
+		<div class="imagem__cartao">
+			<div class="cartao-tras">
+				<p id="cvc-card">cvc</p>
+			</div>
+			<div class="cartao-frente">
+				<img src="images/card-logo p.svg" id="logo-card">
+				<p id="num-card">0000 0000 0000 0000</p>
+				<p id="name-card">Nome Completo</p>
+				<div class="dataCard">
+					<p id="mes-card">00/</p>
+					<p id="ano-card">00</p>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section class="container-form">
+		<div class="finaliza">
+			<img src="images/icon-complete.svg" alt="" class="img-sucess">
+			<h1 class="thanks">Obrigado!</h1>
+			<p class="subThanks">Adicionamos os detalhes do seu cartão</p>
+			<input type="submit" value="Continuar" class="button__final" id="button">
+		</div>
+        
+    </section>
+    <script src="js/infoCard.js"></script>
+</body>
+</html>
+
