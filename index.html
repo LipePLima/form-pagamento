@@ -19,7 +19,10 @@
 				<img src="images/card-logo p.svg" id="logo-card">
 				<p id="num-card">0000 0000 0000 0000</p>
 				<p id="name-card">Nome Completo</p>
-				<p id="data-card">00/00</p>
+				<div class="dataCard">
+					<p id="mes-card">00/</p>
+					<p id="ano-card">00</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -31,7 +34,7 @@
 			</div>
 			<div class="form__div">
 				<label for="numero" class="label">Número do Cartão</label>
-				<input type="tel" id="numero" class="info" placeholder="0000 0000 0000 0000" required maxlength="20">
+				<input type="number" id="numero" class="info" placeholder="0000 0000 0000 0000" required maxlength="20">
 			</div>
 			<div class="form__div2">
 				<div class="form__data">
@@ -52,5 +55,6 @@
 	</section>
 
 	<script src="js/index.js"></script>
+	<script src="js/infoCard.js"></script>
 </body>
 </html>

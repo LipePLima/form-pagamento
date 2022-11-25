@@ -52,11 +52,12 @@ body {
 }
 
 #name-card {
-    margin: 16px 0 0 40px;
+    margin: 16px 0 0 32px;
     text-transform: uppercase;
 }
 
-#data-card {
+.dataCard {
+    display: flex;
     position: relative;
     margin: -15px 0 0 200px;
 }
@@ -131,6 +132,7 @@ body {
     display: flex;
     flex-direction: column;
     align-self: center;
+    margin-bottom: .5rem;
 }
 
 .data {
