@@ -1,13 +1,21 @@
-form['nome'].addEventListener("keyup", () => {
-    const costumerName = document.querySelector("#name-card");
+const nome = form['name'];
+const num  = form['num'];
+const cvc  = form['cvc'];
 
-    if (form['nome'].value == '') {
-        costumerName.textContent = 'NOME COMPLETO'
-    } else {
-        costumerName.textContent = form['nome'].value;
-    }
+const listCard = [nome, num, cvc];
 
-});
+listCard.forEach( (item) => {
+    item.onkeypress( () => {
+        const costumer = document.querySelector(`${item}-card`);
+    
+        if (item.value == '') {
+            costumer.textContent = costumer.value
+        } else {
+            costumer.textContent = item.value;
+        }
+    });
+})
+
 
 form['mes'].addEventListener('keyup', () => {
     const month = document.querySelector('#mes-card');

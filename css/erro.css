@@ -2,9 +2,12 @@
     border: 1px solid hsl(0, 100%, 66%);
 }
 
-.p-erro {
-    font-size: 12px;
+.erro {
+    font-size: 14px;
     color: hsl(0, 100%, 66%);
     margin: .2rem 0 0 .5rem;
 }
 
+.remove {
+    display: none;
+}

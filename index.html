@@ -32,11 +32,13 @@
 		<form class="container-form__form" id="form">
 			<div class="form__div" id="div__name">
 				<label for="nome" class="label">Nome no Cartão</label>
-				<input type="text" id="nome" class="info" placeholder="Nome completo" maxlength="20">
+				<input type="text" id="name" class="info" placeholder="Nome completo" maxlength="20">
+				<small></small>
 			</div>
 			<div class="form__div" id="div__num">
 				<label for="numero" class="label">Número do Cartão</label>
-				<input type="tel" id="numero" class="info" placeholder="0000 0000 0000 0000" required maxlength="20">
+				<input type="tel" id="num" class="info" placeholder="0000 0000 0000 0000" required maxlength="20">
+				<small></small>
 			</div>
 			<div class="form__div2">
 				<div class="form__data">
@@ -44,11 +46,13 @@
 					<div class="form__data-data" id="div__date">
 						<input type="number" id="mes" class="info data" placeholder="MM" required min="01" max="12" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" >
 						<input type="number" id="ano" class="info data" placeholder="AA" required min="22" max="40" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2">
+						<small></small>
 					</div>
 				</div>
 				<div class="form__div2-cvc" id="div__cvc">
 					<label for="cvc" class="label">CVC</label>
 					<input type="number" id="cvc" class="info" placeholder="000" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3">
+					<small></small>
 				</div>
 			</div>
 			

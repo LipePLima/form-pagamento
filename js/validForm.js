@@ -1,59 +1,30 @@
-function validForm (form) {
-    if (form['nome'].value == '') {
-        const div   = document.querySelector('#div__name');
-        const input = document.querySelector('#nome');
-        const p     = document.createElement('p');
+function validForm () {
+    const inputName  = document.querySelector('#name');
+    const inputNum   = document.querySelector('#num');
+    const inputMonth = document.querySelector('#mes');
+    const inputYear  = document.querySelector('#ano');
+    const inputCvc   = document.querySelector('#cvc');
 
-        div.appendChild(p)
-        input.classList.add('info-erro')
-        p.classList.add('p-erro')
-        p.textContent = 'Preencha o Campo Nome'
-    } else {
-        const div   = document.querySelector('#div__name');
-        const input = document.querySelector('#nome');
+    const lista = [inputName, inputNum, inputMonth, inputYear, inputCvc];
+    const erros = [];
 
-        input.classList.remove('info-erro')
-        div.lastElementChild.remove()
+    lista.forEach( (item) => {
+        if (item.value === '') {
+            const erro = item.parentNode.querySelector('small');
+    
+            item.classList.add('info-erro')
+            erro.classList.add('erro')
+            erro.textContent = `Preencha o Campo `
+            erros.push(item)
+        } else {
+            const erro = item.parentNode.querySelector('small');
+            item.classList.remove('info-erro');
+            erro.classList.add('remove');
+            erros.pop()
+        }
+    })
+
+    if (erros.length === 0) {
+        form.reset()
     }
-
-    if (form['numero'].value == '') {
-        const div   = document.querySelector('#div__num');
-        const input = document.querySelector('#numero');
-        const p     = document.createElement('p');
-
-        div.appendChild(p)
-        input.classList.add('info-erro')
-        p.classList.add('p-erro')
-        p.textContent = 'Preencha o Campo Número do Cartão'
-    } else {
-        const div   = document.querySelector('#div__num');
-        const input = document.querySelector('#numero');
-
-        input.classList.remove('info-erro')
-        div.lastElementChild.remove()
-    }
-
-    if (form['mes'].value == '' && form['ano'].value == '') {
-        const div        = document.querySelector('#div__date');
-        const inputMonth = document.querySelector('#mes');
-        const inputYear  = document.querySelector('#ano');
-        const p          = document.createElement('p');
-
-        div.appendChild(p)
-        inputMonth.classList.add('info-erro')
-        inputYear.classList.add('info-erro')
-        p.classList.add('p-erro')
-        p.textContent = 'Preencha os Campos de Validade'
-    } else {
-        const div   = document.querySelector('#div__date');
-        const inputMonth = document.querySelector('#mes');
-        const inputYear  = document.querySelector('#ano');
-
-        inputMonth.classList.remove('info-erro')
-        inputYear.classList.remove('info-erro')
-        div.lastElementChild.remove()
-    }
-
 }
-
-

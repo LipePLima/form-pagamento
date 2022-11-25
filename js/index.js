@@ -5,7 +5,6 @@ button.addEventListener('click', event => {
     event.preventDefault();
 
     validForm(form)
-    const erro = []
-
-    form.reset()
 })
+
+

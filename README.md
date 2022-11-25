@@ -23,7 +23,7 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
  - [x] Preencher cvc do cartão a medida que é preenchido no formulário;
  - [ ] Validação do campos do formulário ao enviar;
  - [ ] Se não houver erros, exiba a página concluído;
- - [ ] Redefinir o formulário quando o usuário clica em "Confirmar" no estado preenchido;
+ - [x] Redefinir o formulário quando o usuário clica em "Confirmar" no estado preenchido;
 
 ## Tecnologias
 
