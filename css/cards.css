@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body {
+    font-family: 'Space Grotesk';
+    background-color: hsl(0, 0%, 100%);   
+    width: 100%; 
+}
+
+.imagem {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-main-mobile.png);
+    width: 100%;
+    height: 15rem;
+}
+
+.imagem__cartao {
+    position: absolute;
+}
+
+.cartao-frente {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/bg-card-front\ p.png) ;
+    border-radius: 10px;
+    margin: -70px 0 0 12px;
+    width: 17.875rem;
+    height: 9.813rem;
+    color: #fff;
+}
+
+.cartao-tras {
+    position: relative;
+    z-index: 0;
+    background-image: url(../images/bg-card-back\ p.png);
+    border-radius: 10px;
+    margin: 42px 22px 0 67px;
+    width: 17.875rem;
+    height: 9.813rem;
+    color: #fff;
+}
+
+#logo-card {
+    margin: 15px 0 0 15px;
+}
+
+#num-card {
+    margin: 35px 32px 0 32px;
+    font-size: 18px;
+}
+
+#name-card {
+    margin: 16px 0 0 32px;
+    text-transform: uppercase;
+}
+
+.dataCard {
+    display: flex;
+    position: relative;
+    margin: -15px 0 0 200px;
+}
+
+#cvc-card {
+    position: relative;
+    padding: 68px 0 0 220px;
+}
