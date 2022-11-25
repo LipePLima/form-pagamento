@@ -27,11 +27,11 @@
 		<form class="container-form__form" id="form">
 			<div class="form__div">
 				<label for="nome" class="label">Nome no Cartão</label>
-				<input type="text" id="nome" class="info" required placeholder="Nome completo">
+				<input type="text" id="nome" class="info" placeholder="Nome completo" maxlength="20">
 			</div>
 			<div class="form__div">
 				<label for="numero" class="label">Número do Cartão</label>
-				<input type="number" id="numero" class="info" placeholder="0000 0000 0000 0000" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="20">
+				<input type="tel" id="numero" class="info" placeholder="0000 0000 0000 0000" required maxlength="20">
 			</div>
 			<div class="form__div2">
 				<div class="form__data">
