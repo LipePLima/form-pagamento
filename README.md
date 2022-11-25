@@ -20,7 +20,7 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
  - [x] Preencher o nome do usuário no cartão a medida que é escrito no formulário;
  - [x] Preencher o número do cartão a medida que é escrito no formulário;
  - [x] Preencher a validade do cartão a medida que é escrita no formulário;
- - [ ] Preencher cvc do cartão a medida que é preenchido no formulário;
+ - [x] Preencher cvc do cartão a medida que é preenchido no formulário;
  - [ ] Validação do campos do formulário ao enviar;
  - [ ] Se não houver erros, exiba a página concluído;
  - [ ] Redefinir o formulário quando o usuário clica em "Confirmar" no estado preenchido;
