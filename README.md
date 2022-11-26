@@ -30,10 +30,35 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
 
  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
 
+## Imagens
+
+<h3> :camera: Página inicial - DESKTOP</h3>
+
+![form-pagamento vercel app_](https://user-images.githubusercontent.com/102830741/204101172-655d8951-a426-4c51-b2c2-db8bacc29416.png)
+
+<h3> :camera: Página inicial(ativa) - DESKTOP</h3>
+
+![form-pagamento vercel app_ (3)](https://user-images.githubusercontent.com/102830741/204101197-048f66ee-4669-4fb4-9e14-d1a0cab34b7c.png)
+
+<h3> :camera: Página inicial - MOBILE</h3>
+
+![form-pagamento vercel app_ (1)](https://user-images.githubusercontent.com/102830741/204101221-7a35270a-2e12-448d-a9de-77e0c124711b.png)
+
+<h3> :camera: Página inicial(ativa) - MOBILE</h3>
+
+![form-pagamento vercel app_ (2)](https://user-images.githubusercontent.com/102830741/204101253-9a6bb6d1-504f-4a4b-b666-c8abc8158b11.png)
+
+<h3> :camera: Página Concluído - DESKTOP</h3>
+
+![form-pagamento vercel app_finaliza html](https://user-images.githubusercontent.com/102830741/204101281-cd642fba-0958-4c18-b4ad-e9b3b2ebdfb0.png)
+
+<h3> :camera: Página Concluído - MOBILE</h3>
+
+![form-pagamento vercel app_finaliza html (1)](https://user-images.githubusercontent.com/102830741/204101293-d19229ac-3b61-4ed9-9d1a-e41db32cfc25.png)
 
 ## Depoimento
 
-![Status: em desenvolvimento](https://img.shields.io/badge/STATUS-Em%20desenvolvimento-blue)
+Neste projeto tive que passar uma noite virado por conta do prazo, mas foi muito satisfatório de fazer e entregar. Pude utilizar funcionalidade como "z-index" no CSS, assim como mexer na position do elemento com "relative" e "absolute". Nele o Javascript não foi tão difícil como no último, já estou mais acostumado com o JS. Também pude usar laços de repetição forEach para uma validação do formulário(coisa que eu fazia na mão todas as validações), e também no "addEventListiner" a função "keyup" que é uma grande novidade para mim. Foram 7 dias de projeto, uma semana longa e bem desafiadora, mas ao mesmo tempo extremamente gratificante de estar melhor que no projeto da semana passada. Espero que gostem!!
 
 ## Contato | Redes Sociais
 
