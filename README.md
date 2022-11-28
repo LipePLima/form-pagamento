@@ -13,7 +13,7 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
 
 ## Etapas
 
- ![Status: em desenvolvimento](https://img.shields.io/badge/STATUS-Em%20desenvolvimento-blue)
+ ![Status: desenvolvido](https://img.shields.io/badge/STATUS-Desenvolvido-success)
 
  - [x] Layout mobile - Página inicial;
  - [x] Layout desktop - Página inicial;
