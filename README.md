@@ -34,7 +34,7 @@ Neste formulário interativo de cartão de crédito os usuários devem ser capaz
 
 <h3> :camera: Página inicial - DESKTOP</h3>
 
-![form-pagamento vercel app_](https://user-images.githubusercontent.com/102830741/204101172-655d8951-a426-4c51-b2c2-db8bacc29416.png)
+![form-pagamento vercel app_](https://user-images.githubusercontent.com/102830741/204101172-655d8951-a426-4c51-b2c2-db8bacc29416.png#vitrinedev)
 
 <h3> :camera: Página inicial(ativa) - DESKTOP</h3>
 
